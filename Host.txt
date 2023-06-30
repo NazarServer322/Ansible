@@ -1,0 +1,16 @@
+linux    ansible_host=13.50.101.124
+linux2   ansible_host=13.48.28.75
+[Servers:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=/home/ubuntu/.ssh/ItStep.pem
+
+[windows_server]
+
+windows ansible_host=13.48.123.174
+
+[windows_server:vars]
+ansible_user = Administrator
+ansible_password = *Ajf)NJ-MOV2f;t%;D5Eat0;*MUIXNaa
+ansible_port = 5986
+ansible_connection = winrm
+ansible_winrm_server_cert_validation = ignore
